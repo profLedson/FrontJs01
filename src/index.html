@@ -6,7 +6,22 @@
   </head>
 
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <h3>Calculadora 4 Operações</h3>
+      <form class="formulario">
+        <input type="number" id="numero1" placeholder="Digite nº1" /><br />
+        <input type="number" id="numero2" placeholder="Digite nº2" /><br />
+        <button id="btn-calcular">CALCULAR</button><br />
+      </form>
+
+      <!-- COMEÇO DO BLOC DE RESULTADOS-->
+      <div class="resultados">
+        <p class="soma">A SOMA É: 10</p>
+        <p class="subtracao">A SUBTRAÇÃO É: 0</p>
+        <p class="multiplicacao">A MULTIPLICAÇÃO É: 25</p>
+        <p class="divisao">A DIVISÃO É: 1</p>
+      </div>
+    </div>
 
     <script src="./index.mjs" type="module"></script>
   </body>
