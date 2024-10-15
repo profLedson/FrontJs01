@@ -3,6 +3,7 @@ const app = document.querySelector("#app");
 const numero1 = document.querySelector("#numero1");
 const numero2 = document.querySelector("#numero2");
 const btnCalcular = document.querySelector("#btn-calcular");
+const btnLimpar = document.querySelector("#btn-limpar");
 
 const resultados = document.querySelector(".resultados");
 const soma = document.querySelector(".soma");
@@ -15,11 +16,26 @@ function calcular() {
   const n1 = Number(numero1.value); // CONVERSÃO P/ NUMBER
   const n2 = Number(numero2.value); // CONVERSÃO P/ NUMBER
   soma.innerHTML = `A soma de ${n1} e ${n2} é: ${n1 + n2}`;
+  subtracao.innerHTML = `A subtração de ${n1} e ${n2} é: ${n1 - n2}`;
+  multiplicacao.innerHTML = `A multiplicação de ${n1} e ${n2} é: ${n1 * n2}`;
+  divisao.innerHTML = `A divisão de ${n1} e ${n2} é: ${n1 / n2}`;
   //return res;
 }
-
+function limparFormulario() {
+  const n1 = numero1.value; // REFERENCIA DO NÚMERO 1
+  const n2 = numero2.value; // REFERENCIA DO NÚMERO 2
+  if (n1 || n2) {
+    const form = document.querySelector("form");
+    form.reset(); // LIMPA O FORMULÁRIO
+    document.querySelector("#nume7Yro1").focus(); //FOCA NO N1
+  }
+}
 // ADICIONAR ESCUTADOR DE EVENTOS
 btnCalcular.addEventListener("click", function (evento) {
   evento.preventDefault(); // DEIXA DE ATUALIZAR...
   calcular();
+});
+btnLimpar.addEventListener("click", function (evento) {
+  evento.preventDefault();
+  limparFormulario();
 });

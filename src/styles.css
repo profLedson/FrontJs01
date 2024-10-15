@@ -16,13 +16,32 @@ input {
   margin: 8px 0;
   padding: 8px;
 }
+.botoes {
+  display: flex;
+  justify-content: center;
+}
+
 #btn-calcular {
+  width: 50%;
+  margin: 0 4px;
   background-color: #000;
   color: #fff;
   padding: 8px;
   border-radius: 4px;
   font-weight: bold;
   cursor: pointer;
+  border: none;
+}
+#btn-limpar {
+  width: 50%;
+  margin: 0 4px;
+  background-color: #ff4d17;
+  color: #fff;
+  padding: 8px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
 }
 .resultados {
   background-color: #ebebeb;
@@ -30,4 +49,9 @@ input {
   padding: 20px;
   border-radius: 8px;
   margin-top: 16px;
+}
+
+.num-inputs {
+  display: flex;
+  flex-direction: column;
 }
