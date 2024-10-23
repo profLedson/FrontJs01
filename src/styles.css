@@ -12,13 +12,24 @@ body {
   padding: 20px;
   border-radius: 8px;
 }
+.inputs {
+  display: flex;
+  flex-direction: column;
+}
 input {
   margin: 8px 0;
   padding: 8px;
 }
+
 .botoes {
   display: flex;
   justify-content: center;
+}
+.mostrar {
+  display: flex;
+}
+.esconder {
+  display: none;
 }
 
 #btn-calcular {
@@ -43,6 +54,7 @@ input {
   cursor: pointer;
   border: none;
 }
+
 .resultados {
   background-color: #ebebeb;
   border: #cccccc 1px solid;
